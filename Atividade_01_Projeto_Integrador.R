@@ -36,6 +36,9 @@ length(nomes) # comando usado para verificar o tamanho do vetor nomes.
 length(idades) # comando usado para verificar o tamanho do vetor idades.
 
 df <- data.frame(nomes,idades) # Combina dois vetores como colunas.
+# Quando usamos o comando data.frame(), é legal colocar o parâmetro stringsAsFactors = F para que
+# o texto não se torne variável do tipo factor. Ex.:
+df <- data.frame(nomes,idades, stringsAsFactors = F)
 
 dim(df) # Retorna a dimensão do banco de dados.
 
